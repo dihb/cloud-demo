@@ -1,0 +1,12 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: userservice
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/data-user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    username: root
+    password: root
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
