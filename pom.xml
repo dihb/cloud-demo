@@ -34,16 +34,9 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
     <modules>
         <module>user-service</module>
+        <module>order-service</module>
+        <module>eureka-service</module>
     </modules>
 </project>

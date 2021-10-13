@@ -1,15 +1,15 @@
 server:
-  port: 8080
+  port: 8081
 spring:
-  application:
-    name: userservice
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/data-user?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/data-order?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
     username: root
     password: Firedove9@
+  application:
+    name: orderservice
 mybatis:
-  mapper-locations: classpath:mapping/*Mapper.xml
+  mapper-locations: classpath:mapping/*.xml
 eureka:
   client:
     service-url:
